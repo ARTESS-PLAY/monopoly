@@ -314,7 +314,6 @@ public class MainFrame extends JFrame {
 
         @Override
         protected void paintComponent(Graphics g) {
-            // TODO Auto-generated method stub
             Graphics2D g2d = (Graphics2D)g;
             Color c1 = new Color(30, 12, 48);
             Color c2 = new Color(130, 39, 107);

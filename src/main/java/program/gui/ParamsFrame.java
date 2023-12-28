@@ -142,7 +142,7 @@ public class ParamsFrame extends JFrame {
             textFields.add(player1);
             textFields.add(player2);
             JButton bc1 = new ButtonColor(Color.RED);
-            JButton bc2 = new ButtonColor(Color.CYAN);
+            JButton bc2 = new ButtonColor(Color.PINK);
             this.add(bc1);
             this.add(bc2);
             bc1.setLocation(483, 165);
@@ -197,17 +197,16 @@ public class ParamsFrame extends JFrame {
 
         @Override
         protected void paintComponent(Graphics g) {
-            // TODO Auto-generated method stub
             Graphics2D g2d = (Graphics2D)g;
-            Color c1 = new Color(30, 12, 48);
-            Color c2 = new Color(130, 39, 107);
+            Color c1 = new Color(109, 0, 236);
+            Color c2 = new Color(171, 56, 189);
             GradientPaint gradient = new GradientPaint(0,700,c2,0,0,c1,true);
             g2d.setPaint(gradient);
             g2d.fillRect(0,0,wight,height);
             g.setFont(font3);
-            g.setColor(Color.CYAN);
-            g.drawString("НАЧАЛЬНЫЕ СБЕРЕЖЕНИЯ", 8, 40);
-            g.drawString("ВВЕДИТЕ ИГРОКОВ", 8, 150);
+            g.setColor(Color.PINK);
+            g.drawString("Денег Изначально", 8, 40);
+            g.drawString("Игроки", 8, 150);
         }
 
         private class SuperTextField extends JTextField{
@@ -270,7 +269,7 @@ public class ParamsFrame extends JFrame {
             back = new JButton("НАЗАД");
             begin = new JButton("НАЧАТЬ");
             back.setFont(font4);
-            back.setForeground(Color.CYAN);
+            back.setForeground(Color.PINK);
             back.setBorderPainted(false);
             back.setFocusPainted (false);
             back.setContentAreaFilled(false);
@@ -278,7 +277,7 @@ public class ParamsFrame extends JFrame {
             back.setLocation(0, 650);
             back.setSize(new Dimension(170, 40));
             begin.setFont(font4);
-            begin.setForeground(Color.CYAN);
+            begin.setForeground(Color.PINK);
             begin.setBorderPainted(false);
             begin.setFocusPainted (false);
             begin.setContentAreaFilled(false);
@@ -294,7 +293,7 @@ public class ParamsFrame extends JFrame {
                     Timer timer = new Timer(200, new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            back.setForeground(Color.CYAN);
+                            back.setForeground(Color.PINK);
                         }
                     });
                     timer.setRepeats(false);
@@ -317,7 +316,7 @@ public class ParamsFrame extends JFrame {
                     Timer timer = new Timer(200, new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            begin.setForeground(Color.CYAN);
+                            begin.setForeground(Color.PINK);
                         }
                     });
                     timer.start();
@@ -400,13 +399,12 @@ public class ParamsFrame extends JFrame {
         }
 
         protected void paintComponent(Graphics g) {
-            // TODO Auto-generated method stub
             super.paintComponent(g);
             Font font = new Font("BOLD", Font.BOLD, 40);
             Image img = Toolkit.getDefaultToolkit().getImage("image\\city.gif");
             g.drawImage(img, 12, 30, null);
             g.setFont(font);
-            g.setColor(Color.CYAN);
+            g.setColor(Color.PINK);
             this.repaint ();
         }
     }

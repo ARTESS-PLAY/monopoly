@@ -49,9 +49,9 @@ public class ContentPanel extends JPanel implements KeyListener {
         super.paintComponent(g);
         Image img = Toolkit.getDefaultToolkit().getImage("image\\background2.gif");
 
-        g.drawImage(img, -190, -10, null);
+        g.drawImage(img, 0, 0, null);
         g.setFont(fontBig);
-        g.setColor(Color.CYAN);
+        g.setColor(Color.PINK);
         g.drawString("Monopoly", 223, 330);
         this.repaint ();
 

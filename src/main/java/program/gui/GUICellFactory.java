@@ -30,7 +30,7 @@ public class GUICellFactory {
         Cell [] cells = playingField.getCells();
         GUICell [] guiCells = new GUICell[cells.length];
 
-        var r = new Reflections("program.logic.gui.gui_cells");
+        var r = new Reflections("program.gui.gui_cells");
         var l = r.getSubTypesOf(GUICell.class);
         Arrays.stream(l.toArray(Class[]::new)).map(x -> x.getName()).forEach(x -> {
             try {
